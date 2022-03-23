@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+	background-image: url("img/wall.png");
+	font-family: 'Fira Code', monospace;
+	color: #D9E0EE;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}
+
+.title {
+	text-align: center;
+	color: #F5E0DC;
+}
+
+.hl {
+	color: #E8A2AF;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.mainbox {
+	background-color: #1E1E2E;
+	border-radius: 15px;
+	padding: 12px;
+}
+
+.alpha {
+	all:unset;
+	color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+}
+
+#clock {
+	padding: 3vw;
+	text-align: center;
+}
+
+b {
+	color: #F5E0DC;
+}
+
+.colcir {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+}
+
+.search input {
+	background-color: #D9E0EE;
+	padding: 4px 0.5rem 4px 0.5rem;
+	height: 1.5rem;
+	width: 80%;
+	border-radius: 2rem;
+	margin-bottom: 16px;
+	margin-left: 26px;
+	border: 0px;
+}
+
+.search button {
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	color: #D9E0EE;
+	font-size: 18px;
+}

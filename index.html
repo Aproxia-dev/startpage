@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Apro's Startpage</title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' href='main.css'>
+		<script src="https://kit.fontawesome.com/497f4f4907.js" crossorigin="anonymous"></script>
+	</head>                              
+                                       
+	<body class='flexbox' onload="startTime()">
+		<div class="mainbox">
+			<h1 class='title'>Welcome back, <span class='hl'>Apro</span>.</h1>
+			<table>
+				<tr>
+					<td>
+						<h1 id='clock'></h1>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<td>
+									<b>~/media</b>
+									<ul>
+										<li>/youtube</li>
+										<li>/netflix</li>
+										<li>/twitter</li>
+										<li>/odysee</li>
+										<li>/jellyfin</li>
+									</ul>
+								</td>
+								<td>
+									<b>~/reddit</b>
+									<ul>
+										<li>/unixporn</li>
+										<li>/linuxmasterrace</li>
+										<li>/mechkeebs</li>
+										<li>/traa</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>~/dev</b>
+									<ul>
+										<li>/github</li>
+										<li>/stack-overflow</li>
+										<li>/mankier</li>
+									</ul>
+								</td>
+								<td>
+									<b>~/school</b>
+									<ul>
+										<li>/gmail</li>
+										<li>/classroom</li>
+										<li>/bakalari</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td colspan='2'>
+									<div style="padding-left: 6rem;">
+										<b>~/misc</b>
+										<ul>
+											<li>/monkeytype</li>
+											<li>/cstimer</li>
+											<li>/archwiki</li>
+											<li>/distrowatch</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan='2'>
+						<div class='flexbox search'>	
+							<form onsubmit="return searchDDG()" style='width: 80%;'>
+								<input type="text" placeholder="DDG Search..." id='search_box'>
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</form>
+						</div>
+						<div class='flexbox'>
+							<div class='colcir' style='background-color:#6E6C7E;'></div>
+							<div class='colcir' style='background-color:#F28FAD;'></div>
+							<div class='colcir' style='background-color:#ABE9B3;'></div>
+							<div class='colcir' style='background-color:#FAE3B0;'></div>
+							<div class='colcir' style='background-color:#96CDFB;'></div>
+							<div class='colcir' style='background-color:#F5C2E7;'></div>
+							<div class='colcir' style='background-color:#89DCEB;'></div>
+							<div class='colcir' style='background-color:#C3BAC6;'></div>
+						</div>
+					</td>
+			</table>
+		</div>
+		</div>
+			
+			<script>
+				function startTime() {
+				  const today = new Date();
+				  let h = today.getHours();
+				  let m = today.getMinutes();
+				  m = checkTime(m);
+				  document.getElementById('clock').innerHTML =  h + ":" + m;
+				  setTimeout(startTime, 1000);
+				}
+				
+				function checkTime(i) {
+					if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+					return i;
+				}
+
+				function searchDDG() {
+					search_term = document.getElementById('search_box').value;
+					window.location.href = "https://duckduckgo.com/?q=" + encodeURI(search_term);
+				
+					return false;
+				}
+
+				</script>
+	</body>
+</html>
