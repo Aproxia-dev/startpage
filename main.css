@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://github.com/braver/programmingfonts/blob/gh-pages/fonts/resources/iosevka/iosevka.woff?raw=true');
 
 body {
 	background-image: url("img/wall.png");
@@ -9,8 +10,19 @@ body {
 	position: fixed;
 }
 
+.braille {
+	font-family: 'Iosevka', monospace;	
+}
+
+.cat {
+	margin-left: 5rem;
+	font-size: 24px;
+	text-align: center;
+}
+
 .title {
 	text-align: center;
+	padding-bottom: 3vh;
 	color: #F5E0DC;
 }
 
@@ -37,18 +49,42 @@ body {
 }
 
 #clock {
-	padding: 3vw;
 	text-align: center;
+}
+
+#clock, #cal {
+	color: #F5E0DC;
+	margin-left: 1rem;
 }
 
 b {
 	color: #F5E0DC;
 }
 
+li {
+	list-style-type: none;
+	margin-left: -1rem;
+}
+
+a {
+	all: unset;
+	color: #D9E0EE;
+}
+
+a:hover {
+	color: #F5E0DC;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .colcir {
 	width: 32px;
 	height: 32px;
 	border-radius: 16px;
+}
+
+.search {
+	margin-top: 12px;
 }
 
 .search input {
@@ -67,4 +103,5 @@ b {
 	border: 0px;
 	color: #D9E0EE;
 	font-size: 18px;
+	cursor: pointer;
 }
