@@ -14,4 +14,11 @@
 	--cyan:		#83c092;
 }
 
-body { background-image: url("img/everforest-wall.png"); }
+body {
+	background-image: url("img/everforest-wall.png");
+	font-family: 'Iosevka', monospace;
+	color: var(--fg);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}

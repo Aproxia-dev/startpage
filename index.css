@@ -9,14 +9,6 @@
 
 //   Meta
 
-body {
-	font-family: 'Iosevka', monospace;
-	color: var(--fg);
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-}
-
 .flexbox {
 	display: flex;
 	justify-content: space-evenly;
