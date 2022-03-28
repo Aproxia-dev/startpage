@@ -13,3 +13,5 @@
 	--magenta:	#f5c2e7;
 	--cyan:		#89dceb;
 }
+
+body { background-image: url("img/catppuccin-wall.png"); }
