@@ -96,50 +96,50 @@
 							<div class='colcir' style='background-color:var(--fg);     '></div>
 						</div>
 					</td>
+				</tr>
 			</table>
 		</div>
-		</div>
 			
-			<script>
-				function startTime() {
-				  const today = new Date();
-				  let hour = today.getHours();
-				  let minute = today.getMinutes();
-				  let day = today.getDate();
-				  let month = today.getMonth();
-				  let year = today.getFullYear();
-				  let weekDay = today.getDay();
-				  let weekDays = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
-				  let months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sep", "Oct", "Nov", "Dec" ];
-				  let daySuf = numSuf(day);
-				  minute = checkTime(minute);
-				  document.getElementById('clock').innerHTML =  hour + "<span class='hl'>:</span>" + minute;
-				  document.getElementById('cal').innerHTML = weekDays[weekDay] + ", " + daySuf + " " + months[month] + " " + year;
-				  setTimeout(startTime, 1000);
-				}
+		<script>
+			function startTime() {
+			  const today = new Date();
+			  let hour = today.getHours();
+			  let minute = today.getMinutes();
+			  let day = today.getDate();
+			  let month = today.getMonth();
+			  let year = today.getFullYear();
+			  let weekDay = today.getDay();
+			  let weekDays = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
+			  let months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sep", "Oct", "Nov", "Dec" ];
+			  let daySuf = numSuf(day);
+			  minute = checkTime(minute);
+			  document.getElementById('clock').innerHTML =  hour + "<span class='hl'>:</span>" + minute;
+			  document.getElementById('cal').innerHTML = weekDays[weekDay] + ", " + daySuf + " " + months[month] + " " + year;
+			  setTimeout(startTime, 1000);
+			}
 
-				function numSuf(i) {
-					if (i > 10 && i < 21) return i + 'th';
-					switch (i % 10) {
-						case 1:  return i + 'st';
-						case 2:  return i + 'nd';
-						case 3:  return i + 'rd';
-						default: return i + 'th';
-					}
+			function numSuf(i) {
+				if (i > 10 && i < 21) return i + 'th';
+				switch (i % 10) {
+					case 1:  return i + 'st';
+					case 2:  return i + 'nd';
+					case 3:  return i + 'rd';
+					default: return i + 'th';
 				}
+			}
 				
-				function checkTime(i) {
-					if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-					return i;
-				}
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+			}
 
-				function searchDDG() {
-					search_term = document.getElementById('search_box').value;
-					window.location.href = "https://duckduckgo.com/?q=" + encodeURI(search_term);
-								
-					return false;
-				}
+			function searchDDG() {
+				search_term = document.getElementById('search_box').value;
+				window.location.href = "https://duckduckgo.com/?q=" + encodeURI(search_term);
+							
+				return false;
+			}
 
-				</script>
+		</script>
 	</body>
 </html>
