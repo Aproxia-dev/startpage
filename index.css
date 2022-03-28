@@ -7,7 +7,7 @@
 
 
 
-//   Meta
+/*   Meta   */
 
 body {
 	background-image: url("img/everforest-wall.png");
@@ -38,7 +38,7 @@ body {
 
 
 
-//   Title
+/*   Title   */
 
 .title {
 	text-align: center;
@@ -52,7 +52,7 @@ body {
 
 
 
-// Clock + Date
+/*   Clock + Date   */
 
 #clock {
 	text-align: center;
@@ -65,7 +65,7 @@ body {
 
 
 
-//   Quicklinks
+/*   Quicklinks   */
 
 b {
 	color: var(--title);
@@ -89,7 +89,7 @@ a:hover {
 
 
 
-//   Searchbar
+/*   Searchbar   */
 
 .search {
 	margin-top: 12px;
@@ -116,7 +116,7 @@ a:hover {
 
 
 
-//   Decoration
+/*   Decoration   */
 
 .cat {
 	margin-left: 5rem;
